@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Face Compare</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+            <img src="https://smartsurveillancesolutions.com/wp-content/uploads/2019/05/Facial-Recognition-icon-01.jpg" alt="Cinque Terre" width="60" height="60">
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <a class="p-2 text-muted" href="/home">Home</a>
+                        <a class="p-2 text-muted" href="#">Face Compare</a>
+                        <a class="p-2 text-muted" href="#">Terms</a>
+                        <a class="p-2 text-muted" href="#">About</a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+  
+  <div class="container text-center">
+  <div class="row">
+    <div class="col-sm">
+
+        <h1 class="text-info display-2">Face Compare</h1>
+        <p class="lead"> </p>
+        <p class="lead">...select two images to compare</p>
+        
+        <form method="POST" enctype="multipart/form-data" action="/uploadFile">
+
+        <div class="container">
+            <div class="row">
+              <div class="container p-3 my-3 border col-sm">
+                    <h2 class="text-info">Image 1</h2><br/>
+
+                    <input type="image" id="avatarimage" src="https://i1.sndcdn.com/artworks-000001104797-rgzcts-t500x500.jpg" style="width:200px;height:200px" class="rounded-circle" />
+                    <br/>
+                    <br/>
+                    <tr><td></td><td><input type="file" name="file" /></td></tr>
+          
+              </div>
+
+
+
+              <div class="container p-3 my-3 border col-sm">
+                      <h2 class="text-info">Image 2</h2><br/>
+
+                      <input type="image" id="avatarimage" src="https://img.nbc.com/sites/nbcunbc/files/images/2013/11/12/dwight-500x500.jpg" style="width:200px;height:200px" class="rounded-circle" />
+                        <br/>
+                        <br/>
+                        <tr><td></td><td><input type="file" name="filetwo" /></td></tr>
+                      
+              </div>
+            </div>
+          </div>
+
+
+
+
+        <tr><td></td><td><input class="btn btn-lg btn-success" type="submit" value="Compare"  style="border-radius:30px;"/></td></tr>
+
+      </form>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+  
+  
+
+
+</body>
+
+
+</html>
