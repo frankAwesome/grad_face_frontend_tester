@@ -5,6 +5,18 @@
 <title>Face Compare</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+<script type="text/javascript" > function changeImage() {
+  document.getElementById("newavatar").src = document.getElementById("input-file").value;
+}
+
+function changeImageTwo() {
+  document.getElementById("newavatartwo").src = document.getElementById("input-file-two").value;
+}
+
+</script>
+
 </head>
 
 <body>
@@ -44,10 +56,10 @@
               <div class="container p-3 my-3 border col-sm">
                     <h2 class="text-info">Image 1</h2><br/>
 
-                    <input type="image" id="avatarimage" src="https://i1.sndcdn.com/artworks-000001104797-rgzcts-t500x500.jpg" style="width:200px;height:200px" class="rounded-circle" />
+                    <img class="already-avatar rounded-circle" id="newavatar" src="https://utulsa.edu/wp-content/uploads/2018/08/generic-avatar.jpg" width="200px"    height="200px"/>
                     <br/>
                     <br/>
-                    <tr><td></td><td><input type="file" name="file" /></td></tr>
+                    <input id="input-file" class="upload-image" onchange="changeImage()" type="file"    name="input-file" accept="image/jpeg, image/png">
           
               </div>
 
@@ -56,10 +68,10 @@
               <div class="container p-3 my-3 border col-sm">
                       <h2 class="text-info">Image 2</h2><br/>
 
-                      <input type="image" id="avatarimage" src="https://img.nbc.com/sites/nbcunbc/files/images/2013/11/12/dwight-500x500.jpg" style="width:200px;height:200px" class="rounded-circle" />
-                        <br/>
-                        <br/>
-                        <tr><td></td><td><input type="file" name="filetwo" /></td></tr>
+                      <img class="already-avatar rounded-circle" id="newavatartwo" src="https://utulsa.edu/wp-content/uploads/2018/08/generic-avatar.jpg" width="200px"    height="200px"/>
+                      <br/>
+                      <br/>
+                      <input id="input-file-two" class="upload-image" onchange="changeImageTwo()" type="file"    name="input-file-two" accept="image/jpeg, image/png">
                       
               </div>
             </div>
@@ -68,7 +80,7 @@
 
 
 
-        <tr><td></td><td><input class="btn btn-lg btn-success" type="submit" value="Compare"  style="border-radius:30px;"/></td></tr>
+        <tr><td></td><td><input class="btn btn-lg btn-success" type="submit" value="Compare" href="/results" style="border-radius:30px;"/></td></tr>
 
       </form>
     </div>
@@ -81,7 +93,7 @@
 
 
 
-  
+
   
 
 

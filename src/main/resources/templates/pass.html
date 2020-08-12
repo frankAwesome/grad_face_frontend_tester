@@ -19,7 +19,7 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
-                        <a class="p-2 text-muted" href="/home">Home</a>
+                        <a class="p-2 text-muted" href="#">Home</a>
                         <a class="p-2 text-muted" href="#">Face Compare</a>
                         <a class="p-2 text-muted" href="#">Terms</a>
                         <a class="p-2 text-muted" href="#">About</a>
@@ -32,39 +32,10 @@
   <div class="container text-center">
   <div class="row">
     <div class="col-sm">
-
-        <h1 class="text-info display-2">Results</h1>
-        <p class="lead"> </p>
-        <p class="lead">Confidence (%):</p>
-        <span th:text="${confidence}" th:remove="tag">Confidence</span>
-<br/>
-
-
-        <div class="container">
-            <div class="row">
-              <div class="container p-3 my-3 border col-sm">
-                    <h2 class="text-info">Image 1</h2><br/>
-
-                    <img th:src="|${imageone}|" style="width:200px;height:200px" class="rounded-circle" />
-              </div>
-
-
-
-              <div class="container p-3 my-3 border col-sm">
-                      <h2 class="text-info">Image 2</h2><br/>
-
-                      <img th:src="|${imagetwo}|" style="width:200px;height:200px" class="rounded-circle" />
-              </div>
-            </div>
-          </div>
+        <h3 class="text-info">Face compare Success!</h3>
+        <br/>
+        <a class="btn btn-lg btn-info" href="/results" role="button" style="border-radius:30px;">Go to Results!</a></br></br>
         
-
-
-
-        
-
-
-        <a class="btn btn-lg btn-success" href="/facecompare" role="button" style="border-radius:30px;">...back</a></br></br>
 
     </div>
 
