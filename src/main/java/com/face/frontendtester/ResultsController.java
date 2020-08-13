@@ -25,6 +25,15 @@ public class ResultsController {
 		model.addObject("imagetwo", Globals.baseImageTwo);
 		model.addObject("confidence", Globals.confidence);
 
+		model.addObject("sexone", Globals.globalfaceone.faceAttributes.gender);
+		model.addObject("sextwo", Globals.globalfacetwo.faceAttributes.gender);
+
+		model.addObject("glassesone", Globals.globalfaceone.faceAttributes.glasses);
+		model.addObject("glassestwo", Globals.globalfacetwo.faceAttributes.glasses);
+
+		model.addObject("ageone", Globals.globalfaceone.faceAttributes.age);
+		model.addObject("agetwo", Globals.globalfacetwo.faceAttributes.age);
+
 		return model;
 	}
 

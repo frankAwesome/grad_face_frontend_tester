@@ -282,6 +282,9 @@ public class FaceCompareController {
 
         Globals.confidence = String.valueOf(response.confidence);
 
+        Globals.globalfaceone = response.faces.get(0);
+        Globals.globalfacetwo = response.faces.get(1);
+
 
         
         return "/pass";
