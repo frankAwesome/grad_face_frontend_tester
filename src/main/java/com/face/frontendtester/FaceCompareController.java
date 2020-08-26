@@ -61,7 +61,7 @@ public class FaceCompareController {
     @RequestMapping(value = "/uploadFile", method = RequestMethod.POST)
     public String uploadFile(@RequestParam("input-file") MultipartFile file, @RequestParam("input-file-two") MultipartFile filetwo) throws IOException {
 
-        String uri = "http://localhost:5000/api/v1/compare";
+        String uri = "http://40.112.168.248:5000/api/v1/compare";
         String body = "";
 
         try{image1 = file.getBytes();}catch(IOException ex){}
@@ -81,7 +81,7 @@ public class FaceCompareController {
 
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
-        //headers.set("token", LoginTokenSetter.token); 
+        headers.set("Authorization", Globals.token); 
 
         HttpEntity<String> entity = new HttpEntity<String>(body, headers);
 

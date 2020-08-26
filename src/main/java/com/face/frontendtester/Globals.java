@@ -16,4 +16,6 @@ public class Globals {
 
     public static Face globalfaceone;
     public static Face globalfacetwo;
+
+    public static String token;
 }
